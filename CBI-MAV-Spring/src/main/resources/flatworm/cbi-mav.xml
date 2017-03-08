@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+
+<file-format>    
+	<converter name="char" class="com.blackbear.flatworm.converters.CoreConverters" method="convertChar" return-type="java.lang.String"/>    
+
+	<record name="testata">
+		<record-ident>
+            <length-ident min-length="120" max-length="120"/>
+        </record-ident>        	
+		<record-definition>            
+		<bean name="testaIM" class="online.flussibancari.cbi.mav.beans.TestaIM"/>            
+			<line>                
+				<record-element length="1" beanref="testaIM.empty"  converter-name="char" >  
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>    
+				<record-element length="2" beanref="testaIM.tipoRecord" converter-name="char" >
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>                                   
+				<record-element length="5" beanref="testaIM.mittenteSia" converter-name="char" >
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>                              
+				<record-element length="5" beanref="testaIM.riceventeABI" converter-name="char" >
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+				<record-element length="6" beanref="testaIM.dataCreazione" converter-name="char" >
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+				<record-element length="20" beanref="testaIM.nomeSupporto" converter-name="char" >
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+			    <record-element length="6" beanref="testaIM.campoADisposizione" converter-name="char" >
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+				<record-element length="59" beanref="testaIM.empty" converter-name="char" >
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+				<record-element length="7" beanref="testaIM.empty" converter-name="char" >  
+					<conversion-option name="justify" value="right"/>  
+                     
+			    </record-element>    
+				<record-element length="2" beanref="testaIM.empty" converter-name="char" >  
+					<conversion-option name="justify" value="right"/>  
+                     
+			    </record-element>    
+				<record-element length="1" beanref="testaIM.codiceDivisa" converter-name="char">
+					<conversion-option name="justify" value="right"/>  
+                    <conversion-option name="pad-character" value="E"/>
+			    </record-element>
+				<record-element length="1" beanref="testaIM.empty" converter-name="char" >  
+					<conversion-option name="justify" value="right"/>  
+                     
+			    </record-element>    
+				<record-element length="5" beanref="testaIM.campoNonDisponibile"  converter-name="char"> 
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>          
+			</line>        
+		</record-definition>
+	</record>
+	
+	<record name="coda">     
+		<record-ident>
+            <length-ident min-length="120" max-length="120"/>
+        </record-ident>   	
+		<record-definition> 
+		<bean name="codaEF" class="online.flussibancari.cbi.mav.beans.CodaEF"/>            
+			<line>                
+				<record-element length="1" beanref="codaEF.empty" converter-name="char">
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element> 				                
+				<record-element length="2" beanref="codaEF.tipoRecord" converter-name="char" >
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>                                  
+				<record-element length="5" beanref="codaEF.mittenteSia" converter-name="char" >
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>                              
+				<record-element length="5" beanref="codaEF.riceventeABI" converter-name="char" >
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+				<record-element length="6" beanref="codaEF.dataCreazione" converter-name="char" >
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+				<record-element length="20" beanref="codaEF.nomeSupporto" converter-name="char" >
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+				<record-element length="6" beanref="codaEF.campoADisposizione" converter-name="char" >
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+				<record-element length="7" beanref="codaEF.numeroDisposizioni" converter-name="char" >
+					<conversion-option name="justify" value="right"/>  
+                    <conversion-option name="pad-character" value="0"/>
+			    </record-element>
+				<record-element length="15" beanref="codaEF.totImportiNegativi" converter-name="char" >
+					<conversion-option name="justify" value="right"/>  
+                    <conversion-option name="pad-character" value="0"/>
+			    </record-element>
+				<record-element length="15" beanref="codaEF.totImportiPositiviZeri" converter-name="char" >
+					<conversion-option name="justify" value="right"/>  
+                    <conversion-option name="pad-character" value="0"/>
+			    </record-element>
+				<record-element length="7" beanref="codaEF.totRecord" converter-name="char">
+					<conversion-option name="justify" value="right"/>  
+                    <conversion-option name="pad-character" value="0"/>
+			    </record-element>
+				<record-element length="24" beanref="codaEF.empty" converter-name="char" >
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+				<record-element length="1" beanref="codaEF.codiceDivisa"  converter-name="char">
+					<conversion-option name="justify" value="right"/>  
+                    <conversion-option name="pad-character" value="E"/>
+			    </record-element>           
+				<record-element length="6" beanref="codaEF.campoNonDisponibile"  converter-name="char">
+					<conversion-option name="justify" value="right"/>  
+                    <conversion-option name="pad-character" value="0"/>
+			    </record-element>
+			</line>        
+		</record-definition>    
+	</record>
+	
+	<record name="codiceFisso14">
+	<record-ident>
+            <length-ident min-length="120" max-length="120"/>
+        </record-ident>   	        	
+		<record-definition> 
+		<bean name="codiceFisso14Bean" class="online.flussibancari.cbi.mav.beans.CodiceFisso14"/>            
+			<line>                
+				<record-element length="1" beanref="codiceFisso14Bean.empty" converter-name="char">
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element> 				                
+				<record-element length="2" beanref="codiceFisso14Bean.tipoRecord" converter-name="char" >
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>                                  
+				<record-element length="7" beanref="codiceFisso14Bean.progressivo" converter-name="char" >
+					<conversion-option name="justify" value="right"/>  
+                    <conversion-option name="pad-character" value="0"/>
+			    </record-element>                              
+				<record-element length="12" beanref="codiceFisso14Bean.empty" converter-name="char" >
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+				<record-element length="6" beanref="codiceFisso14Bean.dataScadenza" converter-name="char" >
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+				<record-element length="5" beanref="codiceFisso14Bean.causale" converter-name="char" >
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+				<record-element length="13" beanref="codiceFisso14Bean.importo" converter-name="char" >
+					<conversion-option name="justify" value="right"/>  
+                    <conversion-option name="pad-character" value="0"/>
+			    </record-element>
+				<record-element length="1" beanref="codiceFisso14Bean.segno" converter-name="char" >
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+				<record-element length="5" beanref="codiceFisso14Bean.abiCreditore" converter-name="char" >
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+				<record-element length="5" beanref="codiceFisso14Bean.cabAssuntrice" converter-name="char">
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+				<record-element length="12"  beanref="codiceFisso14Bean.contoAccredito" converter-name="char" >
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+				<record-element length="22" beanref="codiceFisso14Bean.empty" converter-name="char">
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>           
+				<record-element length="5" beanref="codiceFisso14Bean.codiceSia"  converter-name="char">
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+			    <record-element length="1" beanref="codiceFisso14Bean.tipo"  converter-name="char">
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+			    <record-element length="16" beanref="codiceFisso14Bean.codiceDebitore"  converter-name="char">
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+			    <record-element length="6" beanref="codiceFisso14Bean.empty" converter-name="char">
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+			    <record-element length="1" beanref="codiceFisso14Bean.codiceDvisa"  converter-name="char">
+					<conversion-option name="justify" value="right"/>  
+                    <conversion-option name="pad-character" value="E"/>
+			    </record-element>
+			</line>        
+		</record-definition>    
+	</record>
+	<record name="codiceFisso20">
+		<record-ident>
+            <length-ident min-length="120" max-length="120"/>
+        </record-ident>   	        	
+		<record-definition> 
+		<bean name="codiceFisso20Bean" class="online.flussibancari.cbi.mav.beans.CodiceFisso20"/>            
+			<line>    
+				<record-element length="1" beanref="codiceFisso20Bean.empty" converter-name="char">
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+			    <record-element length="2" beanref="codiceFisso20Bean.tipoRecord"  converter-name="char">
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+			    <record-element length="7" beanref="codiceFisso20Bean.progressivo"  converter-name="char">
+					<conversion-option name="justify" value="right"/>  
+                    <conversion-option name="pad-character" value="0"/>
+			    </record-element>
+			    <record-element length="24" beanref="codiceFisso20Bean.primoSegmentoF"  converter-name="char">
+					<conversion-option name="justify" value="left"/>  
+                    
+			    </record-element>
+			    <record-element length="24" beanref="codiceFisso20Bean.secondoSegmentoF"  converter-name="char">
+					<conversion-option name="justify" value="left"/>  
+                    
+			    </record-element>
+			    <record-element length="24" beanref="codiceFisso20Bean.terzoSegmentoF"  converter-name="char">
+					<conversion-option name="justify" value="left"/>  
+                    
+			    </record-element>
+			    <record-element length="24" beanref="codiceFisso20Bean.quartoSegmentoF"  converter-name="char">
+					<conversion-option name="justify" value="left"/>  
+                    
+			    </record-element>
+			    <record-element length="14" beanref="codiceFisso20Bean.empty" converter-name="char">
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+			</line>        
+		</record-definition>    
+	</record>
+	<record name="codiceFisso30">
+		<record-ident>	
+            <length-ident min-length="120" max-length="120"/>
+        </record-ident>   	        	
+		<record-definition> 
+		<bean name="codiceFisso30Bean" class="online.flussibancari.cbi.mav.beans.CodiceFisso30"/>            
+			<line>    
+				<record-element length="1" beanref="codiceFisso30Bean.empty" converter-name="char">
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+			    <record-element length="2" beanref="codiceFisso30Bean.tipoRecord"  converter-name="char">
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+			    <record-element length="7" beanref="codiceFisso30Bean.progressivo"  converter-name="char">
+					<conversion-option name="justify" value="right"/>  
+                    <conversion-option name="pad-character" value="0"/>
+			    </record-element>
+			    <record-element length="30" beanref="codiceFisso30Bean.primoSegmentoF"  converter-name="char">
+					<conversion-option name="justify" value="left"/>  
+                    
+			    </record-element>
+			    <record-element length="30" beanref="codiceFisso30Bean.secondoSegmentoF"  converter-name="char">
+					<conversion-option name="justify" value="left"/>  
+                    
+			    </record-element>
+			    <record-element length="16" beanref="codiceFisso30Bean.codiceFiscaleDebitore"  converter-name="char">
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+			    <record-element length="34" beanref="codiceFisso30Bean.empty" converter-name="char">
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+			</line>        
+		</record-definition>    
+	</record>
+	
+	<record name="codiceFisso40">   
+		<record-ident>
+            <length-ident min-length="120" max-length="120"/>
+        </record-ident>   	     	
+		<record-definition> 
+		<bean name="codiceFisso40Bean" class="online.flussibancari.cbi.mav.beans.CodiceFisso40"/>            
+			<line>                
+				<record-element length="1" beanref="codiceFisso40Bean.empty" converter-name="char">
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element> 				                
+				<record-element length="2" beanref="codiceFisso40Bean.tipoRecord" converter-name="char" >
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>                                  
+				<record-element length="7" beanref="codiceFisso40Bean.progressivo" converter-name="char" >
+					<conversion-option name="justify" value="right"/>  
+                    <conversion-option name="pad-character" value="0"/>
+			    </record-element>                              
+				<record-element length="30" beanref="codiceFisso40Bean.viaCivicoFrazione" converter-name="char" >
+					<conversion-option name="justify" value="left"/>  
+                    
+			    </record-element>
+				<record-element length="5" beanref="codiceFisso40Bean.cap" converter-name="char" >
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+				<record-element length="25" beanref="codiceFisso40Bean.comuneProvincia" converter-name="char" >
+					<conversion-option name="justify" value="left"/>  
+                    
+			    </record-element>
+				<record-element length="28" beanref="codiceFisso40Bean.completamentoIndirizzo" converter-name="char" >
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+				<record-element length="2" beanref="codiceFisso40Bean.codicePaese" converter-name="char" >
+					<conversion-option name="justify" value="left"/>  
+                    
+			    </record-element>
+				<record-element length="20" beanref="codiceFisso40Bean.empty" converter-name="char" >
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+			</line>        
+		</record-definition>    
+	</record>
+	
+	<record name="codiceFisso50">
+		<record-ident>
+            <length-ident min-length="120" max-length="120"/>
+        </record-ident>   	     	
+		<record-definition> 
+		<bean name="codiceFisso50Bean" class="online.flussibancari.cbi.mav.beans.CodiceFisso50"/>            
+			<line>    
+				<record-element length="1" beanref="codiceFisso50Bean.empty" converter-name="char">
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+			    <record-element length="2" beanref="codiceFisso50Bean.tipoRecord"  converter-name="char">
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+			    <record-element length="7" beanref="codiceFisso50Bean.progressivo"  converter-name="char">
+					<conversion-option name="justify" value="right"/>  
+                    <conversion-option name="pad-character" value="0"/>
+			    </record-element>
+			    <record-element length="40" beanref="codiceFisso50Bean.primoSegmentoF"  converter-name="char">
+					<conversion-option name="justify" value="left"/>  
+                    
+			    </record-element>
+			    <record-element length="40" beanref="codiceFisso50Bean.secondoSegmentoF"  converter-name="char">
+					<conversion-option name="justify" value="left"/>  
+                    
+			    </record-element>
+			    <record-element length="30" beanref="codiceFisso50Bean.empty" converter-name="char">
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+			</line>        
+		</record-definition>    
+	</record>
+	
+	<record name="codiceFisso51">
+		<record-ident>
+            <length-ident min-length="120" max-length="120"/>
+        </record-ident>   	        	
+		<record-definition> 
+		<bean name="codiceFisso51Bean" class="online.flussibancari.cbi.mav.beans.CodiceFisso51"/>            
+			<line>    
+				<record-element length="1" beanref="codiceFisso51Bean.empty" converter-name="char">
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+			    <record-element length="2" beanref="codiceFisso51Bean.tipoRecord"  converter-name="char">
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+			    <record-element length="7" beanref="codiceFisso51Bean.progressivo"  converter-name="char">
+					<conversion-option name="justify" value="right"/>  
+                    <conversion-option name="pad-character" value="0"/>
+			    </record-element>
+			    <record-element length="10" beanref="codiceFisso51Bean.numeroDisposizione"  converter-name="char">
+					<conversion-option name="justify" value="right"/>  
+                    <conversion-option name="pad-character" value="0"/>
+			    </record-element>
+			    <record-element length="54" beanref="codiceFisso51Bean.empty" converter-name="char">
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+			    <record-element length="12" beanref="codiceFisso51Bean.codiceIdentificativoUnivoco" converter-name="char">
+					<conversion-option name="justify" value="right"/>  
+                    <conversion-option name="pad-character" value="0"/>
+			    </record-element>
+			    <record-element length="34" beanref="codiceFisso51Bean.empty" converter-name="char">
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+			</line>        
+		</record-definition>    
+	</record>
+	
+	<record name="codiceFisso70">  
+		<record-ident>
+            <length-ident min-length="120" max-length="120"/>
+        </record-ident>   	      	
+		<record-definition> 
+		<bean name="codiceFisso70Bean" class="online.flussibancari.cbi.mav.beans.CodiceFisso70"/>            
+			<line>    
+				<record-element length="1" beanref="codiceFisso70Bean.empty" converter-name="char">
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+			    <record-element length="2" beanref="codiceFisso70Bean.tipoRecord"  converter-name="char">
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+			    <record-element length="7" beanref="codiceFisso70Bean.progressivo"  converter-name="char">
+					<conversion-option name="justify" value="right"/>  
+                    <conversion-option name="pad-character" value="0"/>
+			    </record-element>
+			    <record-element length="83" beanref="codiceFisso70Bean.empty" converter-name="char">
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+			    <record-element length="1" beanref="codiceFisso70Bean.tipoBollettino" converter-name="char" >
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+			    <record-element length="1" beanref="codiceFisso70Bean.empty" converter-name="char">
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+			    <record-element length="5" beanref="codiceFisso70Bean.empty" converter-name="char" >
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+			    <record-element length="20" beanref="codiceFisso70Bean.chiaviDiControllo" converter-name="char" >
+					<conversion-option name="justify" value="right"/>  
+                    
+			    </record-element>
+			</line>        
+		</record-definition>    
+	</record>		
+</file-format>
