@@ -131,6 +131,7 @@ public class FormatStepThree {
 		Result res = new Result();
 		res.setRows(Integer.valueOf(progressivo));
 		res.setTot(String.valueOf(tot));
+		context.registerShutdownHook();
 		return res;
 	
 	}
