@@ -1,4 +1,4 @@
- IMB6EU708450080317ORDINE FARMACISTI PR                                                                          E      
+ IMB6EU708450260717ORDINE FARMACISTI PR                                                                          E      
  140000001            280217070000000000€16000-0845010200000000001956                      B6EU7                       E
  200000001ORDINE FARMACISTI PROVINCIA DI CUNEO                                                                          
  300000001SIG. ABBA' LORENA                                                                                             
@@ -6726,4 +6726,4 @@
  500000961QUOTA ISCRIZIONE ORDINE FARMACISTI CUNEOISTI CUNEO 2017                                                       
  5100009610000000961                                                      000000000000                                  
  700000961                                                                                                              
- EFB6EU708450080317ORDINE FARMACISTI PR      0000961000000€153760000000000000000000006729                        E000000
+ EFB6EU708450260717ORDINE FARMACISTI PR      0000961000000€153760000000000000000000006729                        E000000
