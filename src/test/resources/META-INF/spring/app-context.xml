@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<description>Example configuration to get you started.</description>
+
+	<context:component-scan base-package="online.flussibancari.mav" />
+	
+	<bean id="fTesta" class="online.flussibancari.cbi.mav.filler.TestaIMFiller" scope="singleton" />
+	<bean id="f14" class="online.flussibancari.cbi.mav.filler.CodiceFisso14Filler" scope="singleton" />
+	<bean id="f20" class="online.flussibancari.cbi.mav.filler.CodiceFisso20Filler" scope="singleton" />
+	<bean id="f30" class="online.flussibancari.cbi.mav.filler.CodiceFisso30Filler" scope="singleton"/>
+	<bean id="f40" class="online.flussibancari.cbi.mav.filler.CodiceFisso40Filler" scope="singleton"/>
+	<bean id="f50" class="online.flussibancari.cbi.mav.filler.CodiceFisso50Filler" scope="singleton"/>
+	<bean id="f51" class="online.flussibancari.cbi.mav.filler.CodiceFisso51Filler" scope="singleton"/>
+	<bean id="f70" class="online.flussibancari.cbi.mav.filler.CodiceFisso70Filler" scope="singleton"/>
+	<bean id="fCoda" class="online.flussibancari.cbi.mav.filler.CodaEFFiller" scope="singleton"/>
+	
+	<bean id="testaIM" class="online.flussibancari.cbi.mav.beans.TestaIM" scope="prototype"/>
+	<bean id="cf14" class="online.flussibancari.cbi.mav.beans.CodiceFisso14" scope="prototype"/>
+	<bean id="cf20" class="online.flussibancari.cbi.mav.beans.CodiceFisso20" scope="prototype"/>
+	<bean id="cf30" class="online.flussibancari.cbi.mav.beans.CodiceFisso30" scope="prototype"/>
+	<bean id="cf40" class="online.flussibancari.cbi.mav.beans.CodiceFisso40" scope="prototype"/>
+	<bean id="cf50" class="online.flussibancari.cbi.mav.beans.CodiceFisso50" scope="prototype"/>
+	<bean id="cf51" class="online.flussibancari.cbi.mav.beans.CodiceFisso51" scope="prototype"/>
+	<bean id="cf70" class="online.flussibancari.cbi.mav.beans.CodiceFisso70" scope="prototype"/>
+	<bean id="codaEF" class="online.flussibancari.cbi.mav.beans.CodaEF" scope="prototype"/>
+</beans>
